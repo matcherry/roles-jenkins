@@ -285,7 +285,7 @@ Role dsPlatformRole = new Role(projectRoleDSPlatform,"Arthur-Apis/.*", dsPlatfor
 roleBasedAuthenticationStrategy.addRole(RoleType.Project, dsPlatformRole);
 
 // anonymous read
-Role dataScienceRole = new Role(projectRoleDataScience,"Arthur-Apis/arthur-apis-test/devel", dataSciencePermissionSet); roleBasedAuthenticationStrategy.addRole(RoleType.Project, dataScienceRole);
+Role dataScienceRole = new Role(projectRoleDataScience,"Arthur-Apis/arthur-apis-test/*", dataSciencePermissionSet); roleBasedAuthenticationStrategy.addRole(RoleType.Project, dataScienceRole);
 
 // developers
 Role topadsRole = new Role(projectRoleTopAds, "Arthur-Apis/ds-self-serve-parameterised-pipeline/.*", topadsPermissionSet);
