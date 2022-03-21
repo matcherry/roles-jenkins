@@ -288,7 +288,7 @@ roleBasedAuthenticationStrategy.addRole(RoleType.Project, dsPlatformRole);
 Role dataScienceRole = new Role(projectRoleDataScience,"Arthur-Apis/arthur-apis-test/(devel|staging)", dataSciencePermissionSet); roleBasedAuthenticationStrategy.addRole(RoleType.Project, dataScienceRole);
 
 // developers
-Role topadsRole = new Role(projectRoleTopAds, "Arthur-Apis/ds-self-serve-parameterised-pipeline/devel", topadsPermissionSet);
+Role topadsRole = new Role(projectRoleTopAds, "Arthur-Apis/ds-self-serve-parameterised-pipeline/devel|staging)", topadsPermissionSet);
 roleBasedAuthenticationStrategy.addRole(RoleType.Project, topadsRole);
 
 Role airflowRole = new Role(projectRoleAirflow,"Arthur-Apis/proxy_mb_pipeline_new", airflowPermissionSet);
